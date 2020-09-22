@@ -75,44 +75,45 @@ input[type=text], select, textarea{
     resize: vertical;
   }
   
-  /* Style the label to display next to the inputs */
+  /* label styles */
   label {
     padding: 12px 12px 12px 0;
     display: inline-block;
   }
   
-  /* Style the submit button */
+  /* Log in button Style  */
   input[type=submit] {
     background-color: lightskyblue;
     color: white;
-    padding: 12px 20px;
+    padding: 1rem 10rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
-  /* Style the container */
+  /* container style */
   .container2 {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-image: url(https://s3-alpha-sig.figma.com/img/2003/a9c0/621026f832f8fe448b1952d31c887434?Expires=1601856000&Signature=SL5Onwwt7G5CxxW8CLqijICQe8~nMkL7jls-Gduk~ZszUr8WTUHcrHf9KZPonzBWEnoagbr~qa0JqWE8JZxhniW96cXN3Nn2pj2UFMaN7i3S7iH6Fw65ttDcXDlf-~h~wuURjSxAA2dHcejNyi-~~gOE0XjPL3u9UbdFoEgoWHDSMyHTWQNR7ydz0fysTHESDzxpDGxSHXmTYHmcJYoTfaXct~NJ8dDqz8ouTS54159pYXWId0kdsJ0bwx20VazvJgrgJYbvLBOa2pEuow7N9gQ8zyzJbdHmECS19rGmEvQ5lHE1rS2nFsXcVZ1eReeBUZIP~qxC-r8BrVU1wI8fCA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
     padding: 20px;
-    width:31%;
+    width:70%;
     height: 40rem
   }
   
-  /* Floating column for labels: 25% width */
+  /* Floating column */
   .col-25 {
     width: 10%;
     margin-top: 6px;
   }
   
-  /* Floating column for inputs: 75% width */
+  /* Floating column for inputs */
   .col-75 {
-    float: left;
+   
     width: 75%;
-    margin-top: 6px;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
   }
-  
+ 
   /* Clear floats after the columns */
   .row:after {
     content: "";
@@ -120,7 +121,7 @@ input[type=text], select, textarea{
     clear: both;
   }
   
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  /* Responsive layout */
   @media screen and (max-width: 600px) {
     .col-25, .col-75, input[type=submit] {
       width: 100%;
