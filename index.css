@@ -168,9 +168,13 @@ h5{font-size: 3rem;
 }
 .section3 p {
     color:lightgray ;
-    height: 33rem;
+    height: 28rem;
     text-shadow: 1px 1px black;
 }
+ul.a {
+    list-style-type: circle;
+    font-weight: bold;
+  }
 
 
 .aboutmain{ display: flex;
