@@ -69,7 +69,7 @@ background-color: #0A2738;
 
 }
 nav a{font-size: larger;
-    color: white;
+    color: lightgrey;
     line-height: 1.5rem;
     padding: 0% 0%;
     margin: .8rem 0rem .8rem 2rem;
@@ -127,19 +127,22 @@ section img{border-radius: 29px;
     font-weight: bold;
     color:  #0A2738;
     text-align: center;
-    margin:1% 1rem -6rem 1rem
+    margin:1% 1rem -6rem 1rem;
+    text-shadow: 1px 1px black;
 }
 h4{font-size: 3rem;
     font-weight: bold;
     color:  #0A2738;
     text-align: center;
     margin:1% 0rem -3rem 1rem;
+    text-shadow: 1px 1px black;
 }
 h5{font-size: 3rem;
     font-weight: bold;
     color:  #0A2738;
     text-align: center;
     margin:5%;
+    text-shadow: 1px 1px black;
 }
 .section1,.section2,.section3{display: flex;
     flex-wrap: wrap;
@@ -153,25 +156,50 @@ h5{font-size: 3rem;
 }
 
 .section1 p {
-    color: black;
+    color: lightgrey;
     height: 21rem;
-    text-shadow: 2px 2px grey;
+    text-shadow: 1px 1px black;
    
 }
 .section2 p {
-    color: grey;
+    color: lightgrey;
     height: 22rem;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 .section3 p {
-    color:gray ;
+    color:lightgray ;
     height: 33rem;
-    text-shadow: 2px 2px black;
+    text-shadow: 1px 1px black;
 }
 
 
 .aboutmain{ display: flex;
 justify-content: space-evenly;}
+
+footer {
+    width: 100%;
+    background:  #0A2738;
+    border-top: 2px dashed grey;
+  }
+  
+
+  
+  footer .footer-content h6 {
+    padding: 0;
+    margin: 2rem 3rem 0 3rem;
+    color:white;
+    font-size: 2rem;
+  }
+  
+  footer nav {
+    display: flex;
+  }
+  
+  footer .footer-content .copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: gray;
+  }
    
 @media(max-width: 800px){
     main{width:100%;
@@ -231,3 +259,6 @@ justify-content: space-evenly;}
     .section3 p {
         height: 6rem;
     }
+}
+
+}
