@@ -64,14 +64,16 @@ h1{font-size: 2rem;
 }
 nav{
 display:flex;
-align-items: baseline;
+justify-content: space-around;
 background-color: #0A2738;
+
 }
 nav a{font-size: larger;
     color: white;
     line-height: 1.5rem;
     padding: 0% 0%;
     margin: .8rem 0rem .8rem 2rem;
+    text-decoration: none;
 }
 nav a:hover{color: rgb(247, 8, 8);} 
 h3{font-weight: bold;
@@ -149,20 +151,83 @@ h5{font-size: 3rem;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/16/5th_Floor_Lecture_Hall.jpg);
    background-repeat: no-repeat;
 }
+
 .section1 p {
-    color: grey;
+    color: black;
     height: 21rem;
+    text-shadow: 2px 2px grey;
+   
 }
 .section2 p {
     color: grey;
     height: 22rem;
+    text-shadow: 2px 2px black;
 }
 .section3 p {
-    color: rgb(99, 91, 91);
+    color:gray ;
     height: 33rem;
+    text-shadow: 2px 2px black;
 }
 
 
 .aboutmain{ display: flex;
 justify-content: space-evenly;}
    
+@media(max-width: 800px){
+    main{width:100%;
+    }
+    .row2{width:100%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/5204/b1b1/5bce01e27f297578fe160e1a62d915e6?Expires=1601856000&Signature=VC1H0Fl5wPMOVpC4HcBy2auG1fGb77evdX1jVvInClpRnCtwyoH4Fo6rQP0GE3NJkO4wOZFUY-ku6VXv3fdDqba0ZSM-e5O74-v0cDz8zIl2DpgBcwLBgMQD276QGbAjk3v~2Y7P7yNu2f2lRoTWTxIS1u1Uv77zsajvF9a9TZXlEtR4PCVeVrBKpT3ZSeIlzfvmVZd4oet0ppyJvp9cOAE0CmkGSfCfdTSfZIgzr7UaRsnbzh~K1keP1ohelJabAqyJhWjoj9rpgsuotk3lQtLX6xdQVUoJeNbxMGOqIQAkWPO-0dvJ-3zeb4KMwl2r3~TCxvfPB2ojDygv4bJiHQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: cover;
+    background-position: unset;
+    }
+    section h3{width:48%;
+    padding:0%;
+    text-align: unset;
+    background: unset;
+}
+    input[type="submit"]{padding: 1.5rem 12rem;
+    margin:0% 0% 5% 3%}
+    .container2 img{display:none}
+
+    .aboutmain{display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    }
+    .container{width: 100%;
+    justify-content: unset;}
+    .topgun{width: 100%;
+        justify-content: center;
+    }
+     h1{font-size: 1rem;
+    }
+    h2{font-size: 1rem;
+       
+        margin:0
+    }
+    h4{font-size: 1rem;
+       
+        margin:0;
+    }
+    h5{font-size: 1rem;
+       
+        margin:5%;
+    }
+    .section1,.section2,.section3{display: flex;
+        flex-wrap: wrap;
+        font-size: .5rem;
+        padding:1%; 
+        margin:1%;
+        width:100%;
+       background-position: center;
+    }
+    
+    .section1 p {
+        height: 1rem;
+    }
+    .section2 p {
+        height: 2rem;
+    }
+    .section3 p {
+        height: 6rem;
+    }
