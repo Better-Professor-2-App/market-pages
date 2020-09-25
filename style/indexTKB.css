@@ -266,5 +266,41 @@ footer {
         height: 6rem;
     }
 }
+@media(max-width: 500px){
+    main{width:100%;
+    }
+    .row2{width:100%;
+    background-image: url("https://s3-alpha-sig.figma.com/img/5204/b1b1/5bce01e27f297578fe160e1a62d915e6?Expires=1601856000&Signature=VC1H0Fl5wPMOVpC4HcBy2auG1fGb77evdX1jVvInClpRnCtwyoH4Fo6rQP0GE3NJkO4wOZFUY-ku6VXv3fdDqba0ZSM-e5O74-v0cDz8zIl2DpgBcwLBgMQD276QGbAjk3v~2Y7P7yNu2f2lRoTWTxIS1u1Uv77zsajvF9a9TZXlEtR4PCVeVrBKpT3ZSeIlzfvmVZd4oet0ppyJvp9cOAE0CmkGSfCfdTSfZIgzr7UaRsnbzh~K1keP1ohelJabAqyJhWjoj9rpgsuotk3lQtLX6xdQVUoJeNbxMGOqIQAkWPO-0dvJ-3zeb4KMwl2r3~TCxvfPB2ojDygv4bJiHQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+    background-size: cover;
+    background-position: unset;
+    }
+    section h3{width:48%;
+    padding:0%;
+    text-align: unset;
+    background: unset;
+}
+    input[type="submit"]{padding: 1.5rem 12rem;
+    margin:0% 0% 5% 3%}
+    .container2 img{display:none}
 
-
+    .aboutmain{display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    }
+    .container{width: 100%;
+    justify-content: unset;}
+    .topgun{width: 100%;
+        justify-content: center;
+    }
+   
+    h3{font-size: 1.5rem;
+         
+    }
+    section span{ font-size: 1.3rem;
+    }
+    input[type="submit"] {
+        padding: 1.5rem 6rem;
+    }
+    .container2{height: 36rem;
+    }
+}
