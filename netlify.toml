@@ -1,9 +1,10 @@
 [build]
 command = "npm run build"
-publish = "/build"
-base = "/"
+ commandOrigin: config
+publish = /opt/build/repo/build
+base: /opt/build/repo
 
 [[redirects]]
 from= "/*"
-to = "index.html"
+to = "homepageTKB.html"
 status = 200
