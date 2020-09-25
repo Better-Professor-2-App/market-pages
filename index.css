@@ -1,3 +1,4 @@
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -268,3 +269,136 @@ footer {
 }
 
 
+=======
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body{
+	margin:0;
+	padding:0;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.wavy
+{
+  position: relative; 
+  -webkit-box-reflex: below -12px linear-gradient(
+      transparent, rgba(0,0,0,0,2));
+}
+.wavy span
+{
+text-shadow: 2px 2px 5px red;
+letter-spacing: 20px;    
+text-align: center;
+display: inline-block;
+color: black;
+font-size: 5em;
+text-transform: uppercase;
+animation: animate 1s ease-in-out infinite;
+animation-delay: calc(0.1s * var(--i));
+
+}
+@keyframes animate
+{
+0%
+{
+ transform: translateY(0px);
+}
+20%
+{
+transform: translateY(-20px);
+}
+40%,100%
+{
+ transform: translateY(0px);   
+}
+}
+.container{
+	max-width:1140px;
+	margin:auto;
+	position: relative;
+	min-height: 1px;
+}
+
+.team{
+	min-height: 150vh;
+    background-image: url("https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+	width: 100%;
+}
+.team h1{
+	font-size: 50px;
+	font-family: open sans;
+	font-weight: 700;
+	color:black;
+	margin:20;
+	padding-bottom:50px;
+	text-align: center;
+}
+.team .card{
+	width:25%;
+	float: left;
+	padding:0px 15px;
+}
+.team .card .box {
+	padding:10px;
+	background-color:black;
+	border-radius:5px;
+	transition: margin 1s ease,box-shadow 1s ease;
+}
+.team .card .box:hover{
+	margin-top:-15px;
+	box-shadow:0px 0px 40px black;
+}
+.team .card .box img{
+	width:150px;
+	display: block;
+	margin:10px auto;
+	border-radius:50%;
+
+}
+
+.team .card .box h4{
+	font-size: 20px;
+	font-family: open sans;
+	margin:20px 0px 10px;
+	color: red;
+	text-align: center;
+	font-weight: 700;
+}
+
+.team .card .box h5{
+	font-size:16px;
+	font-family: open sans;
+	font-weight: 600;
+	color:#b9b9b9;
+	margin:0px 0px 15px;
+	text-align: center;
+}
+.team .card .box p{
+	color:#b9b9b9;
+	font-size: 15px;
+	font-family: open sans;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: center;
+	padding:0px 20px;
+}
+
+
+
+/*responsive*/
+
+@media(max-width: 991px){
+	.team .card{
+		width:50%;
+		margin-bottom:30px;
+	}
+}
+
+@media(max-width:550px){
+	.team .card{
+		width:100%;
+	}
+}
