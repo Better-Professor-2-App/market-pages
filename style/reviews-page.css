@@ -26,6 +26,8 @@ html {
     color: #0A2738;
 }
 
+/*Header Styling*/
+
 header {
     display: flex;
     flex-direction: row;
@@ -59,6 +61,8 @@ header p {
     padding-left: 3rem;
 }
 
+/*Navigation Styling*/
+
 nav {
     display:flex;
     justify-content: flex-end;
@@ -83,6 +87,8 @@ nav a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/*Body Styling*/
 
 h2 {
     font-size: 3.6rem;
@@ -130,6 +136,8 @@ nav .menu-btn i{
     display:none;
 }
 
+/*Tablet View*/
+
 @media(max-width:800px) {
 
     .logo-title {
@@ -173,6 +181,8 @@ nav .menu-btn i{
         padding-left: 9%;
     }
 }
+
+/*Mobile View*/
 
 @media(max-width:500px) {
     .default_img, header p, .Log-In, .default_img2, h1, header, #click {

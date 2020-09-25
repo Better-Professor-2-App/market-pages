@@ -30,6 +30,8 @@ html {
     display:none;
 }
 
+/*Header Styling*/
+
 header {
     display: flex;
     flex-direction: row;
@@ -62,6 +64,8 @@ header p {
     padding-left: 3rem;
 }
 
+/*Navigation Styling*/
+
 nav {
     display:flex;
     justify-content: flex-end;
@@ -86,6 +90,8 @@ nav a:hover {
     font-weight: bold;
     text-decoration: underline;
 }
+
+/*Body Styling*/
 
 h3{
     font-family: 'Roboto Slab', serif;
@@ -118,6 +124,8 @@ h3{
     text-decoration: none;
 }
 
+/*Sign-In and Up Styling*/
+
 .Sign-Up-2, .Log-In-2{
     background-color: #2196F3;
     color: #ffffff;
@@ -149,6 +157,8 @@ nav .menu-btn i{
 #click {
     display:none;
 }
+
+/*Tablet Styling*/
 
 @media(max-width:800px){
 
@@ -208,6 +218,8 @@ nav .menu-btn i{
         font-size: 2.5rem;
     }
 }
+
+/*Mobile Styling*/
 
 @media(max-width:500px) {
     .default_img, header p, .Log-In, .default_img2, h1, header, #click {
