@@ -1,0 +1,302 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;  
+font-size: 100%;  
+font: inherit;  
+vertical-align: baseline;  
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto Slab', serif;
+    color: #0A2738;
+}
+
+.mobile_img2 {
+    display:none;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    margin-left:2.5%; 
+    margin-bottom:0.5%; 
+    margin-top: 0.5%;
+}
+.logo-title {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.Log-In {
+    color: #2196F3;
+    margin-left: 66%;
+    margin-top: 1%;
+    font-size: 1.8rem;
+}
+
+h1 {
+    color: #2196F3;
+    font-size: 4.8rem;
+    padding-left: 1rem;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 2.4rem;
+    padding-left: 3rem;
+}
+
+nav {
+    display:flex;
+    justify-content: flex-end;
+    background-color: #0A2738;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    padding: .5%; 
+}
+nav a{
+    color:#ffff;
+    text-decoration: none;
+    padding: 0.25rem;
+    padding-right:5rem;
+}
+
+.Sign-Up{
+    padding-right:8.5rem;
+}
+
+nav a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h3{
+    font-family: 'Roboto Slab', serif;
+    font-size: 6rem;
+    font-weight: bold;
+    padding-bottom: 2%;
+}
+
+.body p {
+    font-size: 2.4rem;
+    padding-bottom:7%;
+}
+
+.body img {
+    height: 39rem;
+    width: 53rem;
+    padding-left: 2%;
+    padding-top:1%;
+}
+
+.body div {
+    display: flex;
+    flex-direction: column;
+    padding-right: 2%;
+}
+
+.body div a {
+    padding-left: auto;
+    padding-right: auto;
+    text-decoration: none;
+}
+
+.Sign-Up-2, .Log-In-2{
+    background-color: #2196F3;
+    color: #ffffff;
+    text-align: center;
+    padding: 1%;
+    font-size: 3rem;
+    margin-top: 5%;
+    width: 45rem;
+    border-radius: 1rem;
+}
+
+.Sign-Up-2:hover, .Log-In-2:hover {
+    background-color: #ffffff;
+    border: 1px solid #2196F3;
+    color: #2196F3;
+}
+
+.body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+nav .menu-btn i{
+    display:none;
+}
+
+#click {
+    display:none;
+}
+
+@media(max-width:800px){
+
+    .logo-title {
+        padding-left: 2%;
+        padding-right:2%;
+    }
+
+    h1 {
+        font-size: 3.8rem;
+        padding-right: 10rem;
+    }
+
+    header p {
+        font-size: 2rem;
+        padding-left: 3.25%;
+    }
+
+    .Log-In {
+        margin-left: 0%;
+        padding-left: 15rem;
+        padding-top: 1rem;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav a {
+        padding-right: 2.5rem;
+        padding-left: 2.5rem;
+    }
+
+    .Sign-Up {
+        padding-right: 0%;
+    }
+
+    .body {
+        padding-left: 2%;
+    }
+    .body img {
+        height:23rem;
+        width: 33rem;
+        padding-right: 2%;
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+
+    .body p {
+        font-size: 1.8rem;
+    }
+
+    .Sign-Up-2, .Log-In-2 {
+        width: 20rem;
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:500px) {
+    .default_img, header p, .Log-In, .default_img2, h1, header, #click {
+        display: none;
+    }
+
+    #click:checked ~a{
+        display: flex;
+    }
+    
+    nav .menu-btn i{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        color: #2196F3;
+        cursor: pointer;
+        padding-left: 4rem;
+        font-size: 2.2rem;
+        padding-right: 4.6rem;
+    }
+
+    h2 {
+        padding-left: 7.3rem;
+        font-size: 3rem;
+        font-family: 'Roboto Slab', serif;
+        font-weight: bold;
+    }
+
+    nav {
+        background-color: #ffffff;
+        display: block;
+    }
+
+    nav a {
+        left: auto;
+        border: 1px solid #2196F3;
+        margin: 0;
+        padding-top: 2.8rem;
+        padding-left: 4rem;
+        padding-bottom:2.8rem;
+        color: #2196F3;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    nav a:hover {
+        background-color: #2196F3;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .mobile_img2 {
+        display:block;
+    }
+
+    .body {
+        flex-direction: column;
+        margin-top: 1%;
+        padding-left:0%;
+    }
+
+    .body p {
+        font-size: 1.6rem;
+        padding-left: 10.5rem;
+    }
+
+    h3 {
+        font-size: 2.4rem;
+        padding-top: 2%;
+        padding-left: 10.5rem;
+    }
+
+    .Sign-Up-2, .Log-In-2 {
+        width: 29rem;
+        align-items: center;
+        font-size: 1.8rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-left: 10.5rem;
+    }
+
+    .body img {
+        height: 39rem;
+        width: 50rem;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+}
